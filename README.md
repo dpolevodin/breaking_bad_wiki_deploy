@@ -1,3 +1,5 @@
+Site is published at https://dpolevodin.github.io/breaking_bad_wiki_deploy/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
