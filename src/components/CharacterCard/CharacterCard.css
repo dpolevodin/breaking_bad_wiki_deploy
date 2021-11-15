@@ -1,0 +1,79 @@
+:root {
+    --card-white: #fff;
+    --card-black: #000;
+    --card-light: rgb(202, 221, 236);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color-dark: rgba(0, 0, 0, 0.5);
+    --bright-color: ;
+}
+
+.character-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 16rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 0.25rem solid transparent;
+    background-color: var(--background-dark);
+    color: var(--background-white);
+    box-shadow: 0 0.5rem 2rem var(--shadow-color), 0 0.25rem 0.5rem var(--shadow-color), 0 0.125rem 0.125rem var(--shadow-color);
+}
+
+.character-card:hover {
+    border-color: var(--card-light);
+}
+
+.character-card__title {
+    margin-bottom: 1rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.character-card__img {
+    display: flex;
+    width: 4rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    transition-duration: 0.4s;
+}
+
+.character-card:hover .character-card__img {
+    width: 12rem;
+    box-shadow: 0 0.5rem 2rem var(--shadow-color-dark), 0 0.25rem 0.5rem var(--shadow-color-dark), 0 0.125rem 0.125rem var(--shadow-color-dark);
+}
+
+.character-card:hover .character-card__text {
+    display: none;
+}
+
+.character-card:hover .character-card__title {
+    color: var(--background-bright);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    background-color: var(--background-dark);
+    box-shadow: 0 0.5rem 2rem var(--shadow-color-dark), 0 0.25rem 0.5rem var(--shadow-color-dark), 0 0.125rem 0.125rem var(--shadow-color-dark);
+}
+
+.character-card__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.character-card__text:last-child {
+    margin: 0;
+}
+
+.character-card__text strong {
+    margin-right: 0.5rem;
+    font-weight: normal;
+}
